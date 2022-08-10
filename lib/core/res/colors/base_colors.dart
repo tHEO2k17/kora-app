@@ -9,7 +9,7 @@ abstract class BaseColors {
 
   Color get primaryTextColor;
 
-  Color get secondaryTextColor;
+  Color get accentTextColor;
 
   Color get lightColor;
 

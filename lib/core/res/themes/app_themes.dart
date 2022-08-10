@@ -19,5 +19,23 @@ class AppThemes extends Themes {
         }),
         textTheme: GoogleFonts.nunitoTextTheme(),
         primarySwatch: _context.resources.color.primaryColor,
+        inputDecorationTheme: InputDecorationTheme(
+          isDense: true,
+          hintStyle: TextStyle(color: Colors.grey.shade400),
+          filled: true,
+          fillColor: _context.resources.color.accentTextColor,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15),
+            borderSide: const BorderSide(color: Colors.transparent),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15),
+            borderSide: const BorderSide(color: Colors.transparent),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15),
+            borderSide: const BorderSide(color: Colors.transparent),
+          ),
+        ),
       );
 }

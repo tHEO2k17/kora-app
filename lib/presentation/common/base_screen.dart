@@ -3,11 +3,13 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 
 class BaseScreen extends HookWidget {
   final Widget body;
+  final Widget? bottomNav;
   final bool top, bottom;
 
   const BaseScreen({
     Key? key,
     required this.body,
+    this.bottomNav,
     this.top = true,
     this.bottom = true,
   }) : super(key: key);
@@ -21,6 +23,7 @@ class BaseScreen extends HookWidget {
         bottom: bottom,
         child: body,
       ),
+      bottomNavigationBar: bottomNav,
     );
   }
 }

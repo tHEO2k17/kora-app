@@ -38,7 +38,7 @@ class AppColors implements BaseColors {
   Color get primaryTextColor => const Color(0xff363cc0);
 
   @override
-  Color get secondaryTextColor => const Color(0xffe2eaf1);
+  Color get accentTextColor => const Color(0xffe2eaf1);
 
   @override
   Color get lightColor => const Color(0xffECECEC);

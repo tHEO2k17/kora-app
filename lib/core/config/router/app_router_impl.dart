@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:medical_app/core/config/router/app_router.dart';
+import 'package:medical_app/presentation/screens/features/appointment_details_screen.dart';
 import 'package:medical_app/presentation/screens/features/appointment_screen.dart';
 import 'package:medical_app/presentation/screens/features/home_screen.dart';
 import 'package:medical_app/presentation/screens/onboarding/splash_screen.dart';
@@ -23,6 +24,10 @@ class AppRouterImpl extends AppRouter {
         GetPage(
           name: AppointmentScreen.id,
           page: () => const AppointmentScreen(),
+        ),
+        GetPage(
+          name: AppointmentDetailsScreen.id,
+          page: () => const AppointmentDetailsScreen(),
         ),
       ];
 }
