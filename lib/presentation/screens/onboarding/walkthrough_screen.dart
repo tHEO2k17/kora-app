@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:get/get.dart';
 import 'package:medical_app/core/context_extensions.dart';
 import 'package:medical_app/presentation/common/base_screen.dart';
 import 'package:medical_app/presentation/common/form_widget/app_button.dart';
 import 'package:medical_app/presentation/common/slider_indicator.dart';
+import 'package:medical_app/presentation/screens/features/home_screen.dart';
 
 class WalkThroughScreen extends HookWidget {
   static const id = "/walkthrough";
@@ -23,7 +25,7 @@ class WalkThroughScreen extends HookWidget {
         child: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 50),
+              padding: const EdgeInsets.only(top: 60, left: 20, right: 20),
               child: Image.asset("assets/images/ripple_effect.png"),
             ),
             Image.asset(
@@ -88,7 +90,10 @@ class WalkThroughScreen extends HookWidget {
                       currentSlide: currentIndex.value,
                     ),
                     const SizedBox(height: 40),
-                    AppButton.dark(onPressed: () {}, text: "Get Started")
+                    AppButton.dark(
+                      onPressed: () => Get.offAllNamed(HomeScreen.id),
+                      text: "Get Started",
+                    )
                   ],
                 ),
               ),
