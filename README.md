@@ -1,16 +1,10 @@
-# medical_app
+# The Kora App
 
-A new Flutter project.
+### Folder Structure
+- Core: Contains all core classes and helper function, i.e(Resources, Routing, Configs)
+- Presentation: Contains all UI related files, i.e(Screens, Custom Widget, Viewmodels, etc)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Inspiration
+- Robert C. Martin (The clean coder).
+- Reso coder.
+- Myself(Theophilus Paintsil).
