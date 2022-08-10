@@ -1,11 +1,14 @@
 import 'package:get/get.dart';
+import 'package:medical_app/core/config/router/app_router.dart';
 import 'package:medical_app/presentation/screens/onboarding/splash_screen.dart';
 import 'package:medical_app/presentation/screens/onboarding/walkthrough_screen.dart';
 
-class Router {
-  static String get initialRoute => SplashScreen.id;
+class AppRouterImpl extends AppRouter {
+  @override
+  String get initialRoute => SplashScreen.id;
 
-  static List<GetPage> get routes => <GetPage>[
+  @override
+  List<GetPage> get routes => <GetPage>[
         GetPage(name: SplashScreen.id, page: () => const SplashScreen()),
         GetPage(
           name: WalkThroughScreen.id,
