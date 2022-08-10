@@ -8,3 +8,7 @@
 - Robert C. Martin (The clean coder).
 - Reso coder.
 - Myself(Theophilus Paintsil).
+
+### References
+- UI Design: https://www.uplabs.com/posts/medical-app-mobile-app-design
+- Image Resources: http://unsplash.com/, https://avantacare.com/international/nurses/
