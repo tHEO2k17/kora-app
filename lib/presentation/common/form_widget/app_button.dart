@@ -11,7 +11,7 @@ class AppButton extends HookWidget {
   final bool outlined;
   final bool enabled;
   final bool deactivated;
-  final double radius = 10;
+  final double radius = 20;
   final double? fontSize;
   final IconData? icon;
 
